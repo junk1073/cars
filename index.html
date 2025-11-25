@@ -26,5 +26,15 @@
     </div>
   </div>
     <app-root></app-root>
-  <script src="polyfills.js" type="module"></script><script src="main.js" type="module"></script></body>
+  <script src="polyfills.js" type="module"></script><script src="main.js" type="module"></script>
+
+  <script>
+   window.addEventListener('load', () => {
+    const loader = document.getElementById('preloader');
+    if (loader) {
+     loader.style.display = 'none';
+    }
+   });
+  </script>
+  </body>
 </html>
